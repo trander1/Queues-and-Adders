@@ -1,0 +1,42 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : fifo_top
+Version: D-2010.03-SP4
+Date   : Fri Apr 17 16:08:05 2015
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: vector_in[5]
+              (input port)
+  Endpoint: fifo_data_reg[1][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fifo_top           8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  vector_in[5] (in)                        0.00       0.00 f
+  U205/ZN (INVX0)                          0.06       0.06 r
+  U195/Q (OR2X1)                           0.12       0.18 r
+  U211/QN (NOR2X0)                         0.11       0.29 f
+  U194/Q (AND2X1)                          0.14       0.43 f
+  U190/QN (NAND3X0)                        0.14       0.57 r
+  U209/ZN (INVX0)                          0.12       0.69 f
+  U177/Q (AO22X1)                          0.13       0.82 f
+  fifo_data_reg[1][0]/D (DFFX1)            0.04       0.86 f
+  data arrival time                                   0.86
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+

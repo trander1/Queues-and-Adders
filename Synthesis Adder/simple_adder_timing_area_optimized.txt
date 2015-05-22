@@ -1,0 +1,53 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : simple_adder
+Version: D-2010.03-SP4
+Date   : Fri Apr 17 15:11:52 2015
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: a[0] (input port)
+  Endpoint: sum[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  simple_adder       8000                  saed90nm_typ
+  simple_adder_DW01_add_0
+                     8000                  saed90nm_typ
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  a[0] (in)                                               0.00       0.00 f
+  add_7/A[0] (simple_adder_DW01_add_0)                    0.00       0.00 f
+  add_7/U1/Q (AND2X1)                                     0.10       0.10 f
+  add_7/U1_1/CO (FADDX1)                                  0.27       0.37 f
+  add_7/U1_2/CO (FADDX1)                                  0.27       0.63 f
+  add_7/U1_3/CO (FADDX1)                                  0.27       0.90 f
+  add_7/U1_4/CO (FADDX1)                                  0.27       1.17 f
+  add_7/U1_5/CO (FADDX1)                                  0.27       1.44 f
+  add_7/U1_6/CO (FADDX1)                                  0.27       1.70 f
+  add_7/U1_7/CO (FADDX1)                                  0.27       1.97 f
+  add_7/U1_8/CO (FADDX1)                                  0.27       2.24 f
+  add_7/U1_9/CO (FADDX1)                                  0.27       2.51 f
+  add_7/U1_10/CO (FADDX1)                                 0.27       2.77 f
+  add_7/U1_11/CO (FADDX1)                                 0.27       3.04 f
+  add_7/U1_12/CO (FADDX1)                                 0.27       3.31 f
+  add_7/U1_13/CO (FADDX1)                                 0.27       3.58 f
+  add_7/U1_14/CO (FADDX1)                                 0.27       3.84 f
+  add_7/U1_15/S (FADDX1)                                  0.26       4.10 f
+  add_7/SUM[15] (simple_adder_DW01_add_0)                 0.00       4.10 f
+  sum[15] (out)                                           0.00       4.10 f
+  data arrival time                                                  4.10
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+

@@ -1,0 +1,22 @@
+****************************************
+Report : area
+Design : simple_adder
+Version: D-2010.03-SP4
+Date   : Fri Apr 17 15:12:29 2015
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ (File: /opt/local/synopsys/E-2010.12-SP5-2/libraries/syn/saed90nm_typ.db)
+
+Number of ports:               49
+Number of nets:                50
+Number of cells:                1
+Number of references:           1
+
+Combinational area:        463.564793
+Noncombinational area:       0.000000
+Net Interconnect area:       9.279105  
+
+Total cell area:           463.564793
+Total area:                472.843897

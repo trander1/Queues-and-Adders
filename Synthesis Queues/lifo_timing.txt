@@ -1,0 +1,43 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : lifo_top
+Version: D-2010.03-SP4
+Date   : Fri Apr 17 16:10:17 2015
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: vector_in[5]
+              (input port)
+  Endpoint: lifo_head_pos_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  lifo_top           8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  vector_in[5] (in)                        0.00       0.00 f
+  U46/ZN (INVX0)                           0.07       0.07 r
+  U39/Q (AND2X1)                           0.11       0.18 r
+  U38/QN (NOR2X0)                          0.09       0.27 f
+  U37/Q (AO221X1)                          0.15       0.42 f
+  U34/ZN (INVX0)                           0.09       0.51 r
+  U31/QN (NAND4X0)                         0.09       0.60 f
+  U30/Q (OA221X1)                          0.11       0.71 f
+  U29/QN (OAI22X1)                         0.13       0.85 r
+  lifo_head_pos_reg[1]/D (DFFX1)           0.04       0.88 r
+  data arrival time                                   0.88
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+

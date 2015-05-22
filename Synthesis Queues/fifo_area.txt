@@ -1,0 +1,22 @@
+****************************************
+Report : area
+Design : fifo_top
+Version: D-2010.03-SP4
+Date   : Fri Apr 17 16:08:34 2015
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ (File: /opt/local/synopsys/E-2010.12-SP5-2/libraries/syn/saed90nm_typ.db)
+
+Number of ports:               14
+Number of nets:               119
+Number of cells:              108
+Number of references:          15
+
+Combinational area:        725.299195
+Noncombinational area:     746.495991
+Net Interconnect area:      66.154092  
+
+Total cell area:          1471.795186
+Total area:               1537.949278
